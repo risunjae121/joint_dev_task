@@ -1,7 +1,7 @@
 # 課題の回答は このファイル をご利用下さい。
 # 回答の出力を確認される際は，「ruby main.rb」をターミナルから実行して下さい。
 
-def q1
+def q1rb
   names = ["田中", "佐藤", "佐々木", "高橋"]
 
   # 以下に回答を記載
@@ -14,8 +14,10 @@ def q2
   array1 = ["dog", "cat", "fish"]
   array2 = ["bird", "bat", "tiger"]
 
-  # 以下に回答を記載
-
+  # 以下に回答を記載や
+array1.push(array2)
+array1.flatten!
+p array1
 end
 
 def q3
