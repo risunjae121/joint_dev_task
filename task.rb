@@ -1,11 +1,11 @@
 # 課題の回答は このファイル をご利用下さい。
 # 回答の出力を確認される際は，「ruby main.rb」をターミナルから実行して下さい。
 
-def q1rb
+def q1
   names = ["田中", "佐藤", "佐々木", "高橋"]
 
   # 以下に回答を記載
-names.push("斉藤")
+names.<<("斉藤")
 
 puts names
 end
@@ -15,23 +15,22 @@ def q2
   array2 = ["bird", "bat", "tiger"]
 
   # 以下に回答を記載や
-array1.push(array2)
-array1.flatten!
-p array1
+puts array1 + array2
 end
 
 def q3
   numbers = [1, 5, 8, 10, 2, 3, 2, 3, 3, 1, 4, 5, 9]
 
   # 以下に回答を記載
-
+  numbers.count
+  puts numbers.count(3)
 end
 
 def q4
   sports = ["サッカー", "フットサル", nil, "野球", "バスケ", nil, "バレー"]
 
   # 以下に回答を記載
-
+sports.compact!
   # 以下は変更しないで下さい
   p sports
 end
