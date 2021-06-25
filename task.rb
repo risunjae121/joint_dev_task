@@ -89,8 +89,15 @@ def q10
   foods = %w(いか たこ うに しゃけ うにぎり うに軍艦 うに丼)
 
   # 以下に回答を記載
-  text = ["うに"]
- if text.any?{ |t| foods.include?(t)}
+foods.each.include?("うに") do |food, i|
+end
+ if foods.include?("うに") 
+  puts "好物です"
+ elsif foods.include?("うにぎり")
+  puts "好物です"
+ elsif foods.include?("うに軍艦")
+  puts "好物です"
+ elsif foods.include?("うに丼")
   puts "好物です"
  else
   puts "まぁまぁ好きです"
@@ -105,7 +112,8 @@ def q11
 puts "ユーザーの趣味一覧"
 
 sports.each.with_index(1) do |sports, i|
-  puts "No#{i} #{sports}"
+  sports1 = sports.uniq
+  puts "No#{i} #{sports1}"
 end
 
 end
